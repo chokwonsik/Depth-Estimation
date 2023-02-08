@@ -18,7 +18,7 @@ class Yolodata(Dataset):
     valid_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\eval"
     valid_txt = "eval.txt"
 
-    class_str = ['pingpong', 'x']
+    class_str = ['pingpong', 'ignore']
 
     num_class = None
     img_data = []
