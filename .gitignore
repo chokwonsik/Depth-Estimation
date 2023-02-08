@@ -135,6 +135,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# __pycache__/
+__pycache__/
+output/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,opencv,ros
