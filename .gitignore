@@ -137,5 +137,6 @@ $RECYCLE.BIN/
 
 __pycache__/
 output/
+demo_output/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,opencv,ros
