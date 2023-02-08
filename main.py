@@ -5,6 +5,7 @@
 # python main.py --mode eval --cfg yolov3-tiny_tstl_352.cfg --gpus 0 --checkpoint ./output/model_epoch20.pth
 # python main.py --mode onnx --cfg yolov3-tiny_tstl_352.cfg --gpu 0 --checkpoint ./output/model_epoch1050.weights
 # python main.py --mode onnx --cfg yolov3-tiny_tstl_352.cfg --gpus 0 --checkpoint ./output/model_epoch3600.pth
+# python main.py --mode train --gpus 0 --cfg yolov3-tiny_ppb_352.cfg --checkpoint ./output/model_epoch200.pth
 
 import os,sys
 os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
