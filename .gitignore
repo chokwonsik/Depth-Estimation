@@ -136,7 +136,10 @@ $RECYCLE.BIN/
 *.lnk
 
 __pycache__/
-output/
+output/events.out.*
 demo_output/
+output/Evaluation/
+output/*.weights
+output/*.pth
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,opencv,ros
