@@ -13,17 +13,12 @@ class Yolodata(Dataset):
     anno_dir = ""
     file_txt = ""
     # laptop
-    train_dir = "C:\\study_git\\make_kimchi\\Let-s_make_kimchi\\datasets\\train"
+    train_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\train"
     train_txt = "train.txt"
-    valid_dir = "C:\\study_git\\make_kimchi\\Let-s_make_kimchi\\datasets\\eval"
+    valid_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\eval"
     valid_txt = "eval.txt"
-    
-    # desktop
-    # train_dir = "C:\\study\\Let-s_make_kimchi\\Let-s_make_kimchi\\datasets\\train"
-    # train_txt = "train.txt"
-    # valid_dir = "C:\\study\\Let-s_make_kimchi\\Let-s_make_kimchi\\datasets\\eval"
-    # valid_txt = "eval.txt"
-    class_str = ['left', 'right', 'stop', 'crosswalk', 'uturn', 'traffic_light']
+
+    class_str = ['pingpong']
 
     num_class = None
     img_data = []
