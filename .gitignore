@@ -134,5 +134,14 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+output/
+train/
+model/
+intel_depth/
+eval/
+demo/
+demo_output/
+dataloader/
+util/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,opencv,ros
