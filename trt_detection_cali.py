@@ -69,7 +69,7 @@ TRT_LOGGER = trt.Logger(trt.Logger.WARNING)
 
 CFG = "/home/nvidia/xycar_ws/src/yolov3_trt_ros/src/yolov3-tiny_custom3.cfg"
 TRT = '/home/nvidia/xycar_ws/src/yolov3_trt_ros/src/yolov3-tiny_custom3.trt'
-NUM_CLASS = 6
+NUM_CLASS = 2
 INPUT_IMG = '/home/nvidia/xycar_ws/src/yolov3_trt_ros/src/video1_2.png'
 
 bridge = CvBridge()
@@ -127,6 +127,16 @@ class yolov3_trt(object):
             #if self.show_img:
             #    cv2.imshow("show_trt",xycar_image)
             cv2.waitKey(1)
+
+            #######################################
+            # camera calibration
+            camera_matrix = np.array([[357.906682, 0.000000, 332.457325],
+                                      [0.000000, 356.170785, 253.010996],
+                                      [0.000000, 0.000000, 1.000000]], dtype=np.float64)
+
+            dist_coeffs = np.array([-0.274053, 0.049790, -0.001539, -0.003057, 0.000000], dtype=np.float64)
+            xycar_image = cv2.undistort(xycar_image, camera_matrix, dist_coeffs, None)
+            #######################################
 
             image = self.preprocessor.process(xycar_image)
             # Store the shape of the original input image in WH format, we will need it for later
