@@ -24,6 +24,7 @@ while True:
 
     cv2.putText(color_frame, "({0}, {1}) ".format(point[0], point[1]) + "{}mm".format(distance),
                 (point[0], point[1] - 20), cv2.FONT_HERSHEY_PLAIN, 0.75, (0, 255, 0), 2)
+    print(f"point[0] point[1] = {point[0], point[1]}, distance = {distance}")
 
     cv2.imshow("color_frame", color_frame)
     key = cv2.waitKey(0)
