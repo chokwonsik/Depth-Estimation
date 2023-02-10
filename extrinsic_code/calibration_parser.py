@@ -2,17 +2,10 @@ import json
 import numpy as np
 
 def read_json_file(path):
-    # print("=" * 50)
-    # print("Read JSON File: ", path)
-    # print("=" * 50)
     with open(path, "r",) as f:
         calibration_json = json.load(f)
 
     intrinsic = calibration_json["intrinsic"]
-    # print("Intrinsic Calibration\n", intrinsic)
-    extrinsic = calibration_json["extrinsic"]
-    # print("Extrinsic Calibration\n", extrinsic)
-
     camera_matrix = parse_intrinsic_calibration(intrinsic)
 
     return camera_matrix
