@@ -12,17 +12,17 @@ class Yolodata(Dataset):
     file_dir = ""
     anno_dir = ""
     file_txt = ""
-    # laptop
-    train_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\train"
-    train_txt = "train.txt"
-    valid_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\eval"
-    valid_txt = "eval.txt"
-    
-    # # desktop
-    # train_dir = "C:\\Users\\wnsdy\\Desktop\\od_ppb\\Depth-Estimation\\datasets\\train"
+    # # laptop
+    # train_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\train"
     # train_txt = "train.txt"
-    # valid_dir = "C:\\Users\\wnsdy\\Desktop\\od_ppb\\Depth-Estimation\\datasets\\eval"
+    # valid_dir = "C:\\study_git\\depth_estimation\\Depth-Estimation\\datasets\\eval"
     # valid_txt = "eval.txt"
+    
+    # desktop
+    train_dir = "C:\\Users\\wnsdy\\Desktop\\od_ppb\\Depth-Estimation\\datasets\\train"
+    train_txt = "train.txt"
+    valid_dir = "C:\\Users\\wnsdy\\Desktop\\od_ppb\\Depth-Estimation\\datasets\\eval"
+    valid_txt = "eval.txt"
 
     class_str = ['yellow', 'white']
 
