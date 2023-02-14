@@ -9,15 +9,15 @@ def mouse_handler(event, x, y, flags, img_src):
         cv2.imshow('image', img_src)
 
 if __name__ == "__main__":
-    img_src = cv2.imread('images/frame0022.jpg')
+    img_src = cv2.imread('images/frame_test.jpg')
     img_src = cv2.resize(img_src, (640, 480), interpolation=cv2.INTER_CUBIC)
     
-    camera_matrix = np.array([
-                                [357.906682, 0.00000,    332.457325],
-                                [0.00000,    356.170785, 253.010996],
-                                [0.00000,    0.00000,    1.00000],
-                                ], dtype=np.float64)
-    dist_coeff = np.array([-0.274053, 0.049790, -0.001539, -0.003057, 0.00000], dtype=np.float64)
+    # camera_matrix = np.array([
+    #                             [357.906682, 0.00000,    332.457325],
+    #                             [0.00000,    356.170785, 253.010996],
+    #                             [0.00000,    0.00000,    1.00000],
+    #                             ], dtype=np.float64)
+    # dist_coeff = np.array([-0.274053, 0.049790, -0.001539, -0.003057, 0.00000], dtype=np.float64)
 
     # mapx, mapy = cv2.initUndistortRectifyMap(camera_matrix, dist_coeff, None, None, (img_src.shape[1], img_src.shape[0]), 5)
     # img_src = cv2.remap(img_src, mapx, mapy, cv2.INTER_LINEAR)
