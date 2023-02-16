@@ -93,8 +93,8 @@ image_sub = rospy.Subscriber("/usb_cam/image_raw", Imageros, img_callback)
 # distance from camera to object(face) measured
 KNOWN_DISTANCE = 45.0 + 15.0
 # width of face in the real world or Object Plane
-KNOWN_WIDTH = 19.5  # centimeter
-ref_image_face_width = 103.4
+KNOWN_WIDTH = 4.0  # centimeter
+ref_image_face_width = 23.5
 # Colors
 GREEN = (0, 255, 0)
 RED = (0, 0, 255)
@@ -108,8 +108,6 @@ rate = rospy.Rate(10)
 while not rospy.is_shutdown():
     if xycar_image.shape[0] == 0:
         continue
-            
-            #if self.show_img:
 
     distance_list = calculate_distance(bbox_list, xycar_image)
     try:
